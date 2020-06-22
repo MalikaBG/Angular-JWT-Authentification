@@ -14,7 +14,15 @@ import { BoardUserComponent } from './board-user/board-user.component';
 import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
 import { ProfileComponent } from './profile/profile.component';
 
+import {InputTextModule} from 'primeng/inputtext';
+import {ButtonModule} from 'primeng/button';
+import {ChartsModule} from 'ng2-charts';
+import {TableModule} from 'primeng/table';
+
+
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
+
+
 
 @NgModule({
   declarations: [
@@ -31,7 +39,13 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    InputTextModule,
+    ButtonModule,
+    ChartsModule,
+    TableModule
+    
+
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]

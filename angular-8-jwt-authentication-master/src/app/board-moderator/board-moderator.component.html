@@ -1,5 +1,32 @@
+
 <div class="container">
   <header class="jumbotron">
-    <p>{{ content }}</p>
+    <p>{{ arrAnalysis[0].data[0]}}</p>
   </header>
 </div>
+
+
+
+<div style="text-align:left;width:500px;">
+  <h1>
+      {{ title }}!
+  </h1>
+
+  <table >
+      <!-- ADD HEADERS -->
+      <tr>
+          <th>Tweet</th>
+              <th>Sentiment</th>
+                  <th>resp</th>
+      </tr>
+
+      <!-- BIND ARRAY TO TABLE -->
+      <tr >
+          <td>Hello</td>
+              <td>{{arrAnalysis[0].resp}}</td>
+                  <td>{{arrAnalysis[0].resn}}</td>
+      </tr>
+  </table>
+</div>
+
+

@@ -1,5 +1,113 @@
 <div class="container">
   <header class="jumbotron">
     <p>{{ content }}</p>
+    <div class="p-col-12 p-md-4">
+      <div class="ui-inputgroup">
+          <input type="text" pInputText placeholder="Keyword" #txt>   
+          <button  pButton type="button" label="Search" (click)="getTextVal(txt)"></button>      
+      </div>
+  </div>
+
+  <h3>
+    Positive Tweets:
+</h3>
+  <p>{{ resultDT.resp*100}}%</p>
+
+  <h3>
+    Negative Tweets:
+</h3>
+  <p>{{ resultDT.resn*100}}%</p>
+  
   </header>
 </div>
+
+<div style="text-align:left;width:500px;">
+  <h1>
+      Analysis Results
+  </h1>
+
+  <table >
+      <!-- ADD HEADERS -->
+      <tr>
+          <th>Tweet</th>
+              <th>Sentiment</th>
+                  
+      </tr>
+
+      <!-- BIND ARRAY TO TABLE -->
+      
+      
+      <tr >
+            
+                 <td  >{{resultDT.data[1]}}</td>
+           
+                  <td>{{resultDT.Sentiment[1]}}</td>
+      </tr>
+
+      <tr >
+            
+        <td  >{{resultDT.data[2]}}</td>
+  
+         <td>{{resultDT.Sentiment[2]}}</td>
+</tr>
+
+<tr >
+            
+  <td  >{{resultDT.data[3]}}</td>
+
+   <td>{{resultDT.Sentiment[3]}}</td>
+</tr>
+
+<tr >
+            
+  <td  >{{resultDT.data[4]}}</td>
+
+   <td>{{resultDT.Sentiment[4]}}</td>
+</tr>
+<tr >
+            
+  <td  >{{resultDT.data[5]}}</td>
+
+   <td>{{resultDT.Sentiment[5]}}</td>
+</tr>
+<tr >
+            
+  <td  >{{resultDT.data[6]}}</td>
+
+   <td>{{resultDT.Sentiment[6]}}</td>
+</tr>
+<tr >
+            
+  <td  >{{resultDT.data[7]}}</td>
+
+   <td>{{resultDT.Sentiment[7]}}</td>
+</tr>
+<tr >
+            
+  <td  >{{resultDT.data[8]}}</td>
+
+   <td>{{resultDT.Sentiment[8]}}</td>
+</tr>
+<tr >
+            
+  <td  >{{resultDT.data[9]}}</td>
+
+   <td>{{resultDT.Sentiment[9]}}</td>
+</tr>
+<tr >
+            
+  <td  >{{resultDT.data[11]}}</td>
+
+   <td>{{resultDT.Sentiment[11]}}</td>
+</tr>
+<tr >
+            
+  <td  >{{resultDT.data[12]}}</td>
+
+   <td>{{resultDT.Sentiment[12]}}</td>
+</tr>
+
+
+  </table>
+</div>
+

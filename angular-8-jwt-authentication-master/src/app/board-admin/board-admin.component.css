@@ -1,0 +1,29 @@
+.ui-inputgroup.orange-button {
+    background-color: orange !important;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+
+table {
+    width: 180%;
+  }
+  
+  th {
+    width: 100%;
+  }
+
+
+
+  table {
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+ 
