@@ -1,36 +1,40 @@
 <div class="container">
   <header class="jumbotron">
-    <p>{{ content }}</p>
+
     <div class="p-col-12 p-md-4">
+      <p style="color:rgb(21, 22, 21); ; font-size:18px">*Enter a Keyword: </p>
       <div class="ui-inputgroup">
           <input type="text" pInputText placeholder="Keyword" #txt>   
           <button  pButton type="button" label="Search" (click)="getTextVal(txt)"></button>      
       </div>
   </div>
 
-  <h3>
-    Positive Tweets:
-</h3>
-  <p>{{ resultDT.resp*100}}%</p>
 
-  <h3>
+  <h3 style="color:green; font-family:courier" >
+
+   Positive Tweets:
+
+</h3 >
+  <p style="color:green; ; font-size:50px">{{ resultDT.resp}}%</p>
+
+  <h3 style="color:red; font-family:courier">
     Negative Tweets:
 </h3>
-  <p>{{ resultDT.resn*100}}%</p>
+  <p style="color:red; font-size:50px">{{ resultDT.resn}}%</p>
   
   </header>
 </div>
 
 <div style="text-align:left;width:500px;">
-  <h1>
+  <h1 style="color:rgb(12, 1, 15); font-family:courier" >
       Analysis Results
   </h1>
 
   <table >
       <!-- ADD HEADERS -->
       <tr>
-          <th>Tweet</th>
-              <th>Sentiment</th>
+          <th  style="background-color:rgb(51, 53, 53); color:rgb(243, 243, 243);">Tweet</th>
+              <th style="background-color:rgb(51, 53, 53);color:rgb(243, 241, 243);">Sentiment</th>
                   
       </tr>
 

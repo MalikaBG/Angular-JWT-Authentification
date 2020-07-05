@@ -19,7 +19,7 @@ export class BoardAdminComponent  {
   data: any;
   postdata = { 
   }
-  url = 'http://localhost:8076/api/test/analysis'
+  url = 'http://localhost:8084/api/test/analysis'
   json;
   index = 0;
   test;
